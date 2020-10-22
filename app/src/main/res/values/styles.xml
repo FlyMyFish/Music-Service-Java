@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MusicItemTitle">
+        <item name="android:textColor">@color/colorMusicItemTitle</item>
+        <item name="android:textSize">@dimen/musicItemTitle</item>
+    </style>
+    <style name="MusicItemArtist">
+        <item name="android:textColor">@color/colorMusicItemArtist</item>
+        <item name="android:textSize">@dimen/musicItemArtist</item>
+    </style>
+    <style name="MusicItemAlbum">
+        <item name="android:textColor">@color/colorMusicItemAlbum</item>
+        <item name="android:textSize">@dimen/musicItemAlbum</item>
+    </style>
+    <style name="MusicItemOrder">
+        <item name="android:textColor">@color/colorMusicItemOrder</item>
+        <item name="android:layout_margin">@dimen/musicItemOrderPadding</item>
+        <item name="android:textSize">@dimen/musicItemOrder</item>
+        <item name="android:background">@drawable/shape_music_item_order_bg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

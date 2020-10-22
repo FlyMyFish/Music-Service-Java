@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.shichen.musicservicejava"
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:$recyclerview_selection_version"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    implementation "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-dash:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exoplayer_version"
+    implementation "com.google.android.exoplayer:extension-mediasession:$exoplayer_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core_version"
+}

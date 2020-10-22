@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="musicItemTitle">17dp</dimen>
+    <dimen name="musicItemArtist">15dp</dimen>
+    <dimen name="musicItemAlbum">15dp</dimen>
+    <dimen name="musicItemOrder">12dp</dimen>
+    <dimen name="musicItemOrderSize">30dp</dimen>
+    <dimen name="musicItemOrderPadding">5dp</dimen>
+    <dimen name="musicItemOrderStrokeWidth">2dp</dimen>
+</resources>
